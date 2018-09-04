@@ -35,5 +35,22 @@ describe("Player", function(){
     assert.deepStrictEqual(actual, []);
   });
 
+  it("should have addCardToDeck", function(){
+    game.addCardToDeck(card1);
+    const actual = game.deck;
+    assert.deepStrictEqual(actual, [card1]);
+  });
+
+  // it("should have a removeCard", function(){
+  //   game.removeCard()
+  //   const actual = game.deck;
+  //   assert.deepStrictEqual(actual, []);
+  // });
+
+  // it("should have dealCardToPlayer ", function(){
+  //   game.dealCardToPlayer(card1);
+  //   const actual = player1.hand;
+  //   assert.deepStrictEqual(actual, [card1] );
+  // });
 
 });

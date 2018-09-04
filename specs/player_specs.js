@@ -16,4 +16,9 @@ describe("Player", function(){
     assert.strictEqual(actual, 'Player1');
   });
 
+    it("should have a hand", function(){
+      const actual = player1.hand;
+      assert.deepStrictEqual(actual, [] );
+    });
+
 });

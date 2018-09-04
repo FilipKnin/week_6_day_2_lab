@@ -8,3 +8,12 @@ beforeEach( function(){
   player1 = new Player('Player1');
   player2 = new Player('Player2');
 });
+
+
+describe("Player", function(){
+  it("should have a name", function(){
+    const actual = player1.name;
+    assert.strictEqual(actual, 'Player1');
+  });
+
+});
